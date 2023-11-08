@@ -1,0 +1,40 @@
+<!-- 
+
+    CIS 401 Project
+    Movie Hangman Revision
+    Author:  Anthony Huang
+    Date:    11/08/2023
+    Filename: main.html
+    
+ -->
+
+<html>
+  <head>
+    <title>Movie Hangman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" 
+          href="https://mitchum.blog/wp-content/uploads/2019/05/favicon.png" />
+  </head>
+  <body>
+    <main>
+      <h1>Movie Hangman</h1>
+      <h2>Revised By: Anthony Huang</h2>
+      <div id="gallows">
+        <img style="padding-left: 120px" id="hangmanImage" src="hangman0.png">
+      </div>
+      <div id="word"></div>
+      <br>
+      <div id="controls">
+        <input type="text" id="guessBox">
+        <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+        <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+        <br>
+        <br>
+
+      </div>
+      <br>
+      <div id="guesses"></div>
+    </main>   
+   <script src="script.js"></script>
+  </body>
+</html>
