@@ -266,6 +266,8 @@ function Game()
 	{
 		incorrectGuesses++;
 		lost = incorrectGuesses >= maxGuesses;
+		
+
 		if( lost )
 		{
 			guessAllLetters();
@@ -364,7 +366,8 @@ function render( game )
 		let innerHtml = "<span class='guess'>" + guess + "</span>";
 		document.getElementById("guesses").innerHTML += innerHtml;
 	});
-	document.getElementById("hangmanImage").src = "hangman" + game.getIncorrectGuesses() + ".png";
+    // document.getElementById("hangmnanImage").src = 'img/hangman-${game.IncorrectGuesses}.svg';
+	// document.getElementById("hangmanImage").src = "img/hangman-6" + game.getIncorrectGuesses() + ".png";
 
 	let guessBox = document.getElementById('guessBox');
 	if( game.isWon() )
